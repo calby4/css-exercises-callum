@@ -24,5 +24,7 @@ gbody {
   width: 200px;
   /* CHANGE ME */
   padding: 32px;
+  /* Use margin-left: auto; 
+  It will push it to the furthest right of the screen */
   margin-left: 70%;
 }
