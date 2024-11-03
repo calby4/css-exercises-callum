@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -23,4 +27,64 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul{
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+}
+
+.header{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header a, .footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .left-links{
+  display: flex;
+  gap: 16px;
+  
+} */
+
+/* .right-links{
+  display: flex;
+  gap: 16px;
+} */
+
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 16px;
+
+}
+
+
+/* Took from solution, to fix padding problem, had to do with margin.
+
+  Keep in mind to group styling when possible, e.g ul is better usage than left-links and right-links seperately
+*/
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
